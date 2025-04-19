@@ -1,14 +1,20 @@
+import heroImage from "/src/assets/images/hero01.png";
+import Image from "../components/Image";
+import Button from "../components/Button";
+
 const Hero = () => {
     return (
         <div>
-            <div>
-                <div>
+            <div className={`d-flex m-5`}>
+                <div className={`w-50`}>
                     <h1>Glow Your Skin</h1>
                     <p>Clean, conscious skincare for a radiant you.</p>
-                    <button>Shop Now</button>
+                    <Button buttonClassName="bg-olive border-0 px-4 py-2 rounded text-white">
+                        Shop Now
+                    </Button>
                 </div>
                 <div>
-                    {/* Image */}
+                    <Image src={heroImage} width={"300px"} />
                 </div>
             </div>
 

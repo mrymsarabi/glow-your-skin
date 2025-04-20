@@ -1,15 +1,21 @@
 const Navbar = () => {
     return (
-        <nav className="bg-cream text-espresso py-4 px-5 d-flex justify-content-between ">
-            {/* <h1>Glow Your Skin</h1> */}
-            <ul className="d-flex list-unstyled justify-content-between">
-                <li><a href="#home" className="text-decoration-none mx-2">Home</a></li>
-                <li><a href="#about" className="text-decoration-none mx-2">About</a></li>
-                <li><a href="#products" className="text-decoration-none mx-2">Products</a></li>
-                <li><a href="#contact" className="text-decoration-none mx-2">Contact</a></li>
-            </ul>
+        <nav className="bg-cream text-espresso py-3 px-4 border-bottom shadow">
+            <div className="d-flex justify-content-between align-items-center">
+                <h1 className="h4 m-0 fw-bold">Glow Your Skin</h1>
+                <ul className="d-flex list-unstyled m-0">
+                    {["Home", "About", "Products", "Contact"].map((item, index) => (
+                    <li key={index} className="mx-3">
+                        <a href={`#${item.toLowerCase()}`} className="text-decoration-none text-espresso fw-medium">
+                        {item}
+                        </a>
+                    </li>
+                    ))}
+                </ul>
+            </div>
         </nav>
     );
-};
-
-export default Navbar;
+  };
+  
+  export default Navbar;
+  

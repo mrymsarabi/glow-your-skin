@@ -1,6 +1,6 @@
 import product01 from "/src/assets/products/product01.png";
 import product02 from "/src/assets/products/product02.png";
-import product03 from "/src/assets/products/product14.png"
+import product03 from "/src/assets/products/product15.png"
 import ProductCard from "../components/ProductCard";
 
 const Products = () => {

@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
 
             {/* Description */}
-            <div className="mt-5 text-center px-md-5">
+            <div className="mt-5 text-left px-md-5">
                 <p className="text-sage fs-5">
                     At <strong>Glow Your Skin</strong>, we believe in the power of natural ingredients.
                     Our products are carefully crafted to nourish and rejuvenate your skin,

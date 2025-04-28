@@ -1,8 +1,8 @@
 const AboutUs = () => {
     return (
         <section id="about" className="container my-5 py-5">
-            <h2 className="text-left ms-5 text-espresso mb-4">About Us</h2>
-            <p className="text-left text-sage fs-5 px-md-5">
+            <h2 className="text-center text-md-start text-espresso mb-4">About Us</h2>
+            <p className="text-sage fs-5 px-3 px-md-5 text-center text-md-start">
                 At <strong>Glow Your Skin</strong>, we believe that skincare is not just a routine — it’s a ritual of self-love. 
                 Our mission is to create simple, effective, and gentle skincare products that celebrate the natural beauty 
                 in every skin type. With a blend of clean ingredients, soothing formulations, and elegant design, 
@@ -13,5 +13,5 @@ const AboutUs = () => {
         </section>
     );
 };
-  
-export default AboutUs;  
+
+export default AboutUs;

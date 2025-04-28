@@ -1,6 +1,6 @@
 import product01 from "/src/assets/products/product01.png";
 import product02 from "/src/assets/products/product02.png";
-import product03 from "/src/assets/products/product15.png"
+import product03 from "/src/assets/products/product15.png";
 import ProductCard from "../components/ProductCard";
 
 const Products = () => {
@@ -9,21 +9,24 @@ const Products = () => {
             <div className="container">
                 <h2 className="text-center text-espresso mb-5">Product Highlights</h2>
                 <div className="row justify-content-center g-4">
-                    <div className="col-md-4 d-flex justify-content-center">
+                    {/* Product 1 */}
+                    <div className="col-12 col-md-4 d-flex justify-content-center">
                         <ProductCard
                             image={product03}
                             title="Glow Serum"
                             description="A hydrating serum that gives your skin a radiant glow."
                         />
                     </div>
-                    <div className="col-md-4 d-flex justify-content-center">
+                    {/* Product 2 */}
+                    <div className="col-12 col-md-4 d-flex justify-content-center">
                         <ProductCard
                             image={product02}
                             title="Night Repair Cream"
                             description="Revitalize your skin overnight with our nourishing formula."
                         />
                     </div>
-                    <div className="col-md-4 d-flex justify-content-center">
+                    {/* Product 3 */}
+                    <div className="col-12 col-md-4 d-flex justify-content-center">
                         <ProductCard
                             image={product01}
                             title="Hydration Elixir"

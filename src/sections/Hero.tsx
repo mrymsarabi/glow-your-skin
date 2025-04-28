@@ -7,7 +7,7 @@ const Hero = () => {
         <section className="container my-5 py-5">
             <div className="row align-items-center">
                 {/* Text Content */}
-                <div className="col-md-6 mb-4 mb-md-0">
+                <div className="col-md-6 mb-4 mb-md-0 text-center text-md-start">
                     <h1 className="display-5 fw-bold text-espresso mb-3">Glow Your Skin</h1>
                     <p className="lead text-forest mb-4">
                         Clean, conscious skincare for a radiant you.
@@ -18,13 +18,13 @@ const Hero = () => {
                 </div>
 
                 {/* Image */}
-                <div className="col-md-6 text-center">
+                <div className="col-md-6 text-center mt-4 mt-md-0">
                     <Image src={heroImage} width="100%" alt="Glow Your Skin Product" />
                 </div>
             </div>
 
             {/* Description */}
-            <div className="mt-5 text-left px-md-5">
+            <div className="mt-5 text-center text-md-start px-md-5">
                 <p className="text-sage fs-5">
                     At <strong>Glow Your Skin</strong>, we believe in the power of natural ingredients.
                     Our products are carefully crafted to nourish and rejuvenate your skin,

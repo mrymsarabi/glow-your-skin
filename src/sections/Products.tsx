@@ -6,7 +6,7 @@ import ProductCard from "../components/ProductCard";
 const Products = () => {
     return (
         <section id="products" className="py-5 bg-primary">
-            <div className="container">
+            <div className="container py-5 px-3">
                 <h2 className="text-center text-espresso mb-5">Product Highlights</h2>
                 <div className="row justify-content-center g-4">
                     {/* Product 1 */}

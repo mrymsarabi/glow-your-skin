@@ -1,12 +1,34 @@
+import { motion } from 'framer-motion';
+
 const Contact = () => {
     return (
         <section id="contact" className="bg-cream py-5">
             <div className="container w-75 m-auto text-left">
-                <h2 className="text-espresso mb-4">Get in Touch</h2>
-                <p className="mb-4">
+                <motion.h2 
+                    className="text-espresso mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    Get in Touch
+                </motion.h2>
+                <motion.p 
+                    className="mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                >
                     Have questions or want to know more about our products? We'd love to hear from you!
-                </p>
-                <form className="d-flex flex-column align-items-start">
+                </motion.p>
+                <motion.form 
+                    className="d-flex flex-column align-items-start"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                >
                     <input
                         type="text"
                         placeholder="Your Name"
@@ -34,7 +56,7 @@ const Contact = () => {
                     >
                         Send Message
                     </button>
-                </form>
+                </motion.form>
             </div>
         </section>
     );

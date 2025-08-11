@@ -4,10 +4,16 @@ import product01 from "/src/assets/products/product01.png";
 import product02 from "/src/assets/products/product02.png";
 import product03 from "/src/assets/products/product15.png";
 import ProductCard from "../components/ProductCard";
+import Carousel from "../components/Carousel";
 
 const Products = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true }); // 'once: true' ensures the animation runs only once
+
+    const images = Array.from({ length: 12 }, (_, i) => {
+        const index = i + 1;
+        return `/products/product${index.toString().padStart(2, "0")}.png`;
+    });
 
     return (
         <section id="products" className="py-5 bg-primary" ref={ref}>
@@ -55,6 +61,7 @@ const Products = () => {
                     </motion.div>
                 </div>
             </div>
+                <Carousel images={images} visibleCount={3} />
         </section>
     );
 };

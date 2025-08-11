@@ -61,7 +61,7 @@ const Products = () => {
                     </motion.div>
                 </div>
             </div>
-                <Carousel images={images} visibleCount={3} />
+                <Carousel images={images} />
         </section>
     );
 };

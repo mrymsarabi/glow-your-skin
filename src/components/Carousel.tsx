@@ -1,92 +1,85 @@
 import React, { useState, useEffect } from "react";
+import ProductCard from "./ProductCard";
+
+interface Product {
+    image: string;
+    title: string;
+    description: string;
+}
 
 interface CarouselProps {
-    images: string[];
+    items: Product[];
     defaultVisibleCount?: number;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images, defaultVisibleCount = 3 }) => {
+const Carousel: React.FC<CarouselProps> = ({ items, defaultVisibleCount = 3 }) => {
     const [visibleCount, setVisibleCount] = useState(defaultVisibleCount);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const length = images.length;
+    const length = items.length;
 
-    // Function to determine visibleCount based on screen size
     const updateVisibleCount = () => {
         const width = window.innerWidth;
-        if (width < 576) {
-        setVisibleCount(1); // phones
-        } else if (width < 992) {
-        setVisibleCount(2); // tablets
-        } else {
-        setVisibleCount(3); // desktops
-        }
+        if (width < 576) setVisibleCount(1);
+        else if (width < 992) setVisibleCount(2);
+        else setVisibleCount(3);
     };
 
     useEffect(() => {
-        updateVisibleCount(); // run once on mount
+        updateVisibleCount();
         window.addEventListener("resize", updateVisibleCount);
         return () => window.removeEventListener("resize", updateVisibleCount);
     }, []);
 
-    // Prev / Next
     const prevSlide = () => {
-        setCurrentIndex((prev) =>
-        prev === 0 ? length - visibleCount : Math.max(prev - 1, 0)
+        setCurrentIndex(prev =>
+            prev === 0 ? length - visibleCount : Math.max(prev - 1, 0)
         );
     };
 
     const nextSlide = () => {
-        setCurrentIndex((prev) =>
-        prev >= length - visibleCount ? 0 : prev + 1
+        setCurrentIndex(prev =>
+            prev >= length - visibleCount ? 0 : prev + 1
         );
     };
 
-    // Slice images to show
-    const visibleImages = images.slice(currentIndex, currentIndex + visibleCount);
-    if (visibleImages.length < visibleCount) {
-        visibleImages.push(...images.slice(0, visibleCount - visibleImages.length));
+    const visibleItems = items.slice(currentIndex, currentIndex + visibleCount);
+    if (visibleItems.length < visibleCount) {
+        visibleItems.push(...items.slice(0, visibleCount - visibleItems.length));
     }
 
     return (
         <div
-            style={{
-                position: "relative",
-                gap: "10px",
-            }}
+            style={{ gap: "10px" }}
             className="position-relative d-flex justify-content-center align-items-center"
         >
-            {/* Prev Button */}
+            {/* Prev */}
             <button
                 onClick={prevSlide}
                 style={{
-                background: "#0008",
-                color: "white",
-                border: "none",
-                padding: "10px",
-                cursor: "pointer",
-                zIndex: 1,
+                    background: "#0008",
+                    color: "white",
+                    border: "none",
+                    padding: "10px",
+                    cursor: "pointer",
+                    zIndex: 1,
                 }}
             >
                 ❮
             </button>
 
-            {/* Images */}
-            {visibleImages.map((img, idx) => (
-                <img
-                    key={idx}
-                    src={img}
-                    alt={`Slide ${currentIndex + idx}`}
-                    style={{
-                        width: "200px", // fixed width
-                        height: "auto",
-                        borderRadius: "8px",
-                        transition: "0.5s ease",
-                    }}
-                />
+            {/* Product Cards */}
+            {visibleItems.map((product, idx) => (
+                <div key={idx} style={{ flex: "0 0 auto" }}>
+                    <ProductCard
+                        image={product.image}
+                        title={product.title}
+                        description={product.description}
+                    />
+                </div>
             ))}
 
-            {/* Next Button */}
+            {/* Next */}
             <button
                 onClick={nextSlide}
                 style={{

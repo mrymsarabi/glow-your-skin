@@ -59,17 +59,19 @@ const Hero = () => {
                     </motion.div>
                 </div>
             </div>
+
+            <hr className="my-5" />
+
             {/* Description */}
             <div className="mt-5 text-center text-md-start px-md-5">
                 <motion.p
-                    className="text-sage fs-5"
+                    className="text-muted fs-5 lh-base"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
                 >
-                    At <strong>Glow Your Skin</strong>, we believe in the power of natural ingredients.
-                    Our products are carefully crafted to nourish and rejuvenate your skin,
-                    using only the purest and most effective botanical extracts.
+                    At **Glow Your Skin**, we believe that **skincare is self-love**. We harness the power of **pure, natural ingredients**
+                    to craft products that nourish and rejuvenate, celebrating your unique radiance and leaving your skin glowing.
                 </motion.p>
             </div>
         </section>

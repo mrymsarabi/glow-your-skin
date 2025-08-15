@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import heroImage from "/src/assets/images/hero01.png";
 import Image from "../components/Image";
 import Button from "../components/Button";
+import GradientText from "../components/GradientText";
 
 const Hero = () => {
     return (
@@ -10,12 +11,24 @@ const Hero = () => {
                 {/* Text Content */}
                 <div className="col-md-6 mb-4 mb-md-0 text-center text-md-start">
                     <motion.h1
-                        className="display-5 fw-bold text-espresso mb-3"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        Glow Your Skin
+                        <GradientText
+                            colors={[
+                                "#20190F", // espresso
+                                "#4B3621", // dark mocha
+                                "#5C4033", // chocolate brown
+                                "#4B3621",
+                                "#20190F"
+                            ]}
+                            animationSpeed={3}
+                            showBorder={false}
+                            className="display-5 fw-bold mb-3"
+                        >
+                            Glow Your Skin
+                        </GradientText>
                     </motion.h1>
                     <motion.p
                         className="lead text-forest mb-4"
@@ -42,7 +55,7 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
                     >
-                        <Image src={heroImage} width="100%" alt="Glow Your Skin Product" />
+                        <Image src={heroImage} width="90%" alt="Glow Your Skin Product" />
                     </motion.div>
                 </div>
             </div>

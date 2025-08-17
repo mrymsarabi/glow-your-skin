@@ -1,18 +1,58 @@
+// @import './variables';
+
+// $body-bg: $cream;
+// $body-color: $espresso;
+
+// $theme-colors: (
+//   "primary": $olive,
+//   "secondary": $sage,
+//   "dark": $espresso,
+//   "light": $cream,
+//   "espresso": $espresso,
+//   "olive": $olive,
+//   "forest": $forest,
+//   "sage": $sage,
+//   "cream": $cream
+// );
+
+// @import 'bootstrap/scss/bootstrap';
+
 @import './variables';
 
-$body-bg: $cream;
-$body-color: $espresso;
+// Light mode (default)
+$body-bg: $primary-light;
+$body-color: $text-light;
 
 $theme-colors: (
-  "primary": $olive,
-  "secondary": $sage,
-  "dark": $espresso,
-  "light": $cream,
-  "espresso": $espresso,
-  "olive": $olive,
-  "forest": $forest,
-  "sage": $sage,
-  "cream": $cream
+    "primary": $accent-pink-light,    // CTA buttons
+    "secondary": $accent-blue-light,  // links/icons
+    "light": $secondary-light,        // cards/sections
+    "dark": $text-light
 );
 
 @import 'bootstrap/scss/bootstrap';
+
+// Dark mode override
+[data-theme="dark"] {
+    body {
+        background-color: $primary-dark;
+        color: $text-dark;
+    }
+
+    // Override Bootstrap theme colors
+    --bs-primary: #{$accent-pink-dark};
+    --bs-secondary: #{$accent-blue-dark};
+    --bs-light: #{$secondary-dark};
+    --bs-dark: #{$text-dark};
+
+    a {
+        color: $accent-blue-dark;
+    }
+    .btn-primary {
+        background-color: $accent-pink-dark;
+        border-color: $accent-pink-dark;
+        &:hover {
+            background-color: lighten($accent-pink-dark, 5%);
+        }
+    }
+}

@@ -6,7 +6,7 @@ const Navbar = () => {
     const handleShow = () => setShow(prev => !prev);
 
     return (
-        <nav className="bg-cream text-espresso py-3 px-4 border-bottom shadow position-sticky top-0" style={{ zIndex: 1030 }}>
+        <nav className="bg-light text-espresso py-3 px-4 border-bottom shadow position-sticky top-0" style={{ zIndex: 1030 }}>
             {/* Top Navbar Row */}
             <div className="d-flex justify-content-between align-items-center">
                 <h1 className="h4 m-0 fw-bold">Glow Your Skin</h1>

@@ -6,7 +6,7 @@ interface ProductCardProps {
   
 const ProductCard: React.FC<ProductCardProps> = ({ image, title, description }) => {
     return (
-        <div className="card shadow-sm border-0" style={{ width: "18rem", backgroundColor: "#E3DEC8" }}>
+        <div className="card shadow-sm border-0 p-2" style={{ width: "18rem", backgroundColor: "#E9F1FA" }}>
             <img
                 src={image}
                 className="card-img-top"

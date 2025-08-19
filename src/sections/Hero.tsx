@@ -43,7 +43,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
-                        <Button buttonClassName="bg-olive border-0 px-4 py-2 rounded text-white">
+                        <Button buttonClassName="bg-secondary border-0 px-4 py-2 rounded text-white">
                             Shop Now
                         </Button>
                     </motion.div>

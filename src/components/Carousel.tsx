@@ -49,46 +49,41 @@ const Carousel: React.FC<CarouselProps> = ({ items, defaultVisibleCount = 3 }) =
     }
 
     return (
-        <div
-            style={{ gap: "10px" }}
-            className="position-relative d-flex justify-content-center align-items-center"
-        >
-            {/* Prev */}
+        <div className="position-relative d-flex justify-content-center align-items-center gap-3">
+            {/* Prev Button */}
             <button
                 onClick={prevSlide}
+                className="btn btn-secondary rounded-circle shadow-sm opacity-75"
                 style={{
-                    background: "#0008",
-                    color: "white",
-                    border: "none",
-                    padding: "10px",
-                    cursor: "pointer",
-                    zIndex: 1,
+                    width: "40px",
+                    height: "40px",
+                    zIndex: 1
                 }}
             >
                 ❮
             </button>
 
-            {/* Product Cards */}
-            {visibleItems.map((product, idx) => (
-                <div key={idx} style={{ flex: "0 0 auto" }}>
-                    <ProductCard
-                        image={product.image}
-                        title={product.title}
-                        description={product.description}
-                    />
-                </div>
-            ))}
+            {/* Product Cards Container */}
+            <div className="row flex-nowrap g-3 justify-content-center w-100">
+                {visibleItems.map((product, idx) => (
+                    <div key={idx} className="col-12 col-sm-6 col-lg-4">
+                        <ProductCard
+                            image={product.image}
+                            title={product.title}
+                            description={product.description}
+                        />
+                    </div>
+                ))}
+            </div>
 
-            {/* Next */}
+            {/* Next Button */}
             <button
                 onClick={nextSlide}
+                className="btn btn-secondary rounded-circle shadow-sm opacity-75"
                 style={{
-                background: "#0008",
-                color: "white",
-                border: "none",
-                padding: "10px",
-                cursor: "pointer",
-                zIndex: 1,
+                    width: "40px",
+                    height: "40px",
+                    zIndex: 1
                 }}
             >
                 ❯

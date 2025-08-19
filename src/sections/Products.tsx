@@ -1,3 +1,4 @@
+// Products.jsx
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Carousel from "../components/Carousel";
@@ -28,14 +29,21 @@ const Products = () => {
     ];
 
     return (
-        <section id="products" className="py-5 bg-primary" ref={ref}>
+        <section id="products" className="py-5 bg-secondary" ref={ref}>
             <div className="container py-5 px-3">
-                <h2 className="text-center text-espresso mb-5">Product Highlights</h2>
+                <motion.h2
+                    className="text-center text-dark mb-5 fw-bold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    Product Highlights
+                </motion.h2>
 
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
                 >
                     <Carousel items={products} />
                 </motion.div>

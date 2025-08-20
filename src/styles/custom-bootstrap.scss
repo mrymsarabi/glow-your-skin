@@ -31,6 +31,7 @@ $theme-colors: (
 );
 
 @import 'bootstrap/scss/bootstrap';
+@import './dark-mode';
 
 // Dark mode override
 [data-theme="dark"] {

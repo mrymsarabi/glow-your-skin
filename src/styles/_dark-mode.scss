@@ -1,0 +1,27 @@
+[data-theme="dark"] {
+    // Override Bootstrap colors
+    --bs-light: #{$secondary-dark};
+    --bs-dark: #{$text-dark};
+    --bs-body-bg: #{$primary-dark};
+    --bs-body-color: #{$text-dark};
+    
+    // Custom component overrides for dark mode
+    .text-dark {
+        color: var(--bs-body-color) !important;
+    }
+    .bg-light {
+        background-color: var(--bs-light) !important;
+    }
+    .card {
+        background-color: var(--bs-light) !important;
+        color: var(--bs-dark) !important;
+    }
+
+    // Ensure all sections use the correct theme colors
+    .bg-white {
+        background-color: $primary-dark !important;
+    }
+    .bg-secondary-light {
+        background-color: $secondary-dark !important;
+    }
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ThemeSwitcher from "../components/ThemeSwitcher"; 
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
                 <h1 className="h4 m-0 fw-bold">Glow Your Skin</h1>
 
                 {/* Desktop Nav */}
-                <ul className="d-none d-md-flex list-unstyled m-0">
+                <ul className="d-none d-md-flex list-unstyled m-0 align-items-center">
                     {["Home", "Products", "Testimonials", "Our Story", "About Us", "Blog", "Contact"].map((item, index) => (
                         <li key={index} className="mx-3">
                             <a 
@@ -29,16 +30,22 @@ const Navbar = () => {
                             </a>
                         </li>
                     ))}
+                    <li className="ms-3">
+                        <ThemeSwitcher />
+                    </li>
                 </ul>
 
                 {/* Hamburger */}
-                <button
-                    className="d-md-none border-0 bg-transparent fs-3 text-dark"
-                    onClick={handleShow}
-                    aria-label="Toggle menu"
-                >
-                    ☰
-                </button>
+                <div className="d-md-none d-flex align-items-center">
+                    <ThemeSwitcher />
+                    <button
+                        className="border-0 bg-transparent fs-3 text-dark ms-2"
+                        onClick={handleShow}
+                        aria-label="Toggle menu"
+                    >
+                        ☰
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Dropdown Menu */}

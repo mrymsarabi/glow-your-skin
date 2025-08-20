@@ -5,6 +5,7 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import Hero from './sections/Hero'
 import Navbar from './sections/Navbar'
+import OurStory from './sections/OurStory'
 import Products from './sections/Products'
 import Testimonials from './sections/Testimonials'
 
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Products />
       <Testimonials />
+      <OurStory />
       <AboutUs />
       <Contact />
       <Footer />

@@ -6,6 +6,7 @@ import Footer from './sections/Footer'
 import Hero from './sections/Hero'
 import Navbar from './sections/Navbar'
 import Products from './sections/Products'
+import Testimonials from './sections/Testimonials'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Products />
+      <Testimonials />
       <AboutUs />
       <Contact />
       <Footer />

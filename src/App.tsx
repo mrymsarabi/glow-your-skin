@@ -1,6 +1,7 @@
 // import React from 'react'
 import './App.css'
 import AboutUs from './sections/AboutUs'
+import Blog from './sections/Blog'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import Hero from './sections/Hero'
@@ -18,6 +19,7 @@ function App() {
       <Testimonials />
       <OurStory />
       <AboutUs />
+      <Blog />
       <Contact />
       <Footer />
     </div>

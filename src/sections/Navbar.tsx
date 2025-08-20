@@ -19,10 +19,10 @@ const Navbar = () => {
 
                 {/* Desktop Nav */}
                 <ul className="d-none d-md-flex list-unstyled m-0">
-                    {["Home", "About", "Products", "Contact"].map((item, index) => (
+                    {["Home", "Products", "Testimonials", "Our Story", "About Us", "Blog", "Contact"].map((item, index) => (
                         <li key={index} className="mx-3">
                             <a 
-                                href={`#${item.toLowerCase()}`} 
+                                href={`#${item.toLowerCase().replace(/\s/g, '')}`} 
                                 className="text-decoration-none text-dark fw-medium"
                             >
                                 {item}
@@ -51,10 +51,10 @@ const Navbar = () => {
                     animate="visible"
                 >
                     <ul className="list-unstyled text-center m-0">
-                        {["Home", "About", "Products", "Contact"].map((item, index) => (
+                        {["Home", "Products", "Testimonials", "Our Story", "About Us", "Blog", "Contact"].map((item, index) => (
                             <li key={index} className="my-2">
                                 <a
-                                    href={`#${item.toLowerCase()}`}
+                                    href={`#${item.toLowerCase().replace(/\s/g, '')}`}
                                     className="text-decoration-none text-dark fw-bold fs-5"
                                     onClick={handleShow}
                                 >

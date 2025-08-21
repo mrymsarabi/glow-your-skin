@@ -1,27 +1,43 @@
 [data-theme="dark"] {
-    // Override Bootstrap colors
-    --bs-light: #{$secondary-dark};
-    --bs-dark: #{$text-dark};
+    // Override Bootstrap's built-in variables for a seamless theme switch
     --bs-body-bg: #{$primary-dark};
     --bs-body-color: #{$text-dark};
-    
-    // Custom component overrides for dark mode
+    --bs-light: #{$secondary-dark};
+    --bs-dark: #{$text-dark}; // Ensures that .text-dark becomes light in dark mode
+
+    // Explicitly set text colors for specific Bootstrap classes
     .text-dark {
-        color: var(--bs-body-color) !important;
+        color: var(--bs-dark) !important;
     }
+    
+    // Explicitly set background and text colors for common components
     .bg-light {
-        background-color: var(--bs-light) !important;
-    }
-    .card {
         background-color: var(--bs-light) !important;
         color: var(--bs-dark) !important;
     }
 
-    // Ensure all sections use the correct theme colors
+    .bg-dark {
+        background-color: var(--bs-dark) !important;
+        color: var(--bs-light) !important;
+    }
+
+    // Fix for specific sections
     .bg-white {
         background-color: $primary-dark !important;
     }
-    .bg-secondary-light {
-        background-color: $secondary-dark !important;
+    
+    .card {
+        background-color: var(--bs-light) !important;
+        color: var(--bs-dark) !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .text-muted {
+        color: rgba(244, 244, 244, 0.7) !important; // A lighter, semi-transparent white
+    }
+    
+    // Target the placeholder text
+    .form-control::placeholder {
+        color: rgba(244, 244, 244, 0.5) !important;
     }
 }

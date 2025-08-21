@@ -34,26 +34,26 @@ $theme-colors: (
 @import './dark-mode';
 
 // Dark mode override
-[data-theme="dark"] {
-    body {
-        background-color: $primary-dark;
-        color: $text-dark;
-    }
+// [data-theme="dark"] {
+//     body {
+//         background-color: $primary-dark;
+//         color: $text-dark;
+//     }
 
-    // Override Bootstrap theme colors
-    --bs-primary: #{$accent-pink-dark};
-    --bs-secondary: #{$accent-blue-dark};
-    --bs-light: #{$secondary-dark};
-    --bs-dark: #{$text-dark};
+//     // Override Bootstrap theme colors
+//     --bs-primary: #{$accent-pink-dark};
+//     --bs-secondary: #{$accent-blue-dark};
+//     --bs-light: #{$secondary-dark};
+//     --bs-dark: #{$text-dark};
 
-    a {
-        color: $accent-blue-dark;
-    }
-    .btn-primary {
-        background-color: $accent-pink-dark;
-        border-color: $accent-pink-dark;
-        &:hover {
-            background-color: lighten($accent-pink-dark, 5%);
-        }
-    }
-}
+//     a {
+//         color: $accent-blue-dark;
+//     }
+//     .btn-primary {
+//         background-color: $accent-pink-dark;
+//         border-color: $accent-pink-dark;
+//         &:hover {
+//             background-color: lighten($accent-pink-dark, 5%);
+//         }
+//     }
+// }

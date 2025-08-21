@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next"; // Import the hook
 import heroImage from "/src/assets/images/hero01.png";
 import Image from "../components/Image";
 import Button from "../components/Button";
 import GradientText from "../components/GradientText";
 
 const Hero = () => {
+    const { t } = useTranslation(); // Initialize the hook
+
     return (
         <section className="container-fluid my-5 py-5 bg-secondary-light">
             <div className="container">
@@ -22,7 +25,7 @@ const Hero = () => {
                                 showBorder={false}
                                 className="display-4 fw-bold mb-3"
                             >
-                                Glow Your Skin
+                                {t("hero_slogan_title")} {/* Using the translation key */}
                             </GradientText>
                         </motion.h1>
                         <motion.p
@@ -31,7 +34,7 @@ const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            Clean, conscious skincare for a radiant you.
+                            {t("hero_slogan")} {/* Using the translation key */}
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -39,7 +42,7 @@ const Hero = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                         >
                             <Button buttonClassName="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg">
-                                Shop Now
+                                {t("hero_cta")} {/* Using the translation key */}
                             </Button>
                         </motion.div>
                     </div>
@@ -50,7 +53,7 @@ const Hero = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
                         >
-                            <Image src={heroImage} width="90%" alt="Glow Your Skin Product" className="img-fluid rounded-3 shadow-lg" />
+                            <Image src={heroImage} width="90%" alt={t("hero_slogan_title")} className="img-fluid rounded-3 shadow-lg" />
                         </motion.div>
                     </div>
                 </div>
@@ -65,8 +68,12 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.8 }}
                     >
-                        At <span className="fw-bold">Glow Your Skin</span>, we believe that <span className="fw-bold">skincare is self-love</span>. We harness the power of <span className="fw-bold">pure, natural ingredients</span>
-                        to craft products that nourish and rejuvenate, celebrating your unique radiance and leaving your skin glowing.
+                        {/* This text has multiple bolded words, which makes a single key difficult. 
+                          It's best to split it or use interpolation. A simple solution is to split it. 
+                        */}
+                        {t("hero_text_part1")} <span className="fw-bold">{t("hero_text_part2")}</span>
+                        {t("hero_text_part3")} <span className="fw-bold">{t("hero_text_part4")}</span>
+                        {t("hero_text_part5")}
                     </motion.p>
                 </div>
             </div>

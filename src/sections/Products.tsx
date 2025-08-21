@@ -1,32 +1,26 @@
-// Products.jsx
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import Carousel from "../components/Carousel";
+
+interface Product {
+    title: string;
+    description: string;
+}
 
 const Products = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
+    const { t } = useTranslation();
 
-    const products = [
-        { image: "/products/product01.png", title: "Glow Serum", description: "A hydrating serum that gives your skin a radiant glow." },
-        { image: "/products/product02.png", title: "Night Repair Cream", description: "Revitalize your skin overnight with our nourishing formula." },
-        { image: "/products/product03.png", title: "Hydration Elixir", description: "A lightweight elixir that locks in moisture and boosts elasticity." },
-        { image: "/products/product04.png", title: "Vitamin C Boost", description: "Brightens and evens skin tone for a natural radiance." },
-        { image: "/products/product05.png", title: "Soothing Aloe Gel", description: "Calms redness and hydrates sensitive skin." },
-        { image: "/products/product06.png", title: "SPF 50+ Sunscreen", description: "Protects from harmful UV rays with a lightweight formula." },
-        { image: "/products/product07.png", title: "Collagen Cream", description: "Improves firmness and reduces fine lines." },
-        { image: "/products/product08.png", title: "Exfoliating Scrub", description: "Removes dead skin cells for a smoother texture." },
-        { image: "/products/product09.png", title: "Overnight Mask", description: "Deeply nourishes while you sleep." },
-        { image: "/products/product10.png", title: "Green Tea Mist", description: "Refreshes and hydrates throughout the day." },
-        { image: "/products/product11.png", title: "Eye Revive Gel", description: "Reduces puffiness and dark circles." },
-        { image: "/products/product12.png", title: "Rose Water Toner", description: "Balances skin pH and tightens pores." },
-        { image: "/products/product13.png", title: "Niacinamide Serum", description: "Minimizes pores and improves skin barrier." },
-        { image: "/products/product14.png", title: "Lip Hydration Balm", description: "Keeps lips soft and moisturized." },
-        { image: "/products/product15.png", title: "Glow Your Skin Cream", description: "Moisturizes & replenishes with a natural glow." },
-        { image: "/products/product16.png", title: "Charcoal Clay Mask", description: "Detoxifies and purifies skin." },
-        { image: "/products/product17.png", title: "Peptide Complex Serum", description: "Boosts elasticity and smooths fine lines." },
-        { image: "/products/product18.png", title: "Hyaluronic Acid Drops", description: "Locks in intense moisture for plump skin." },
-    ];
+    // Explicitly cast the return value to an array of Products
+    const products = t("products", { returnObjects: true }) as Product[];
+
+    // Add image paths back to the objects, and explicitly type the 'product' parameter
+    const productsWithImages = products.map((product, index) => ({
+      ...product,
+      image: `/products/product0${index + 1}.png`
+    }));
 
     return (
         <section id="products" className="py-5 bg-secondary" ref={ref}>
@@ -37,7 +31,7 @@ const Products = () => {
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Product Highlights
+                    {t("products_title")}
                 </motion.h2>
 
                 <motion.div
@@ -45,7 +39,7 @@ const Products = () => {
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    <Carousel items={products} />
+                    <Carousel items={productsWithImages} />
                 </motion.div>
             </div>
         </section>

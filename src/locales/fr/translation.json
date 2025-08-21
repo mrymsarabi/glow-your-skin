@@ -17,6 +17,28 @@
     "hero_text_part4": "le soin de la peau est un amour-propre",
     "hero_text_part5": ". Nous exploitons le pouvoir des ingrédients purs et naturels pour créer des produits qui nourrissent et rajeunissent, célébrant votre éclat unique et laissant votre peau radieuse.",
 
+    "products_title": "Produits Phares",
+    "products": [
+        { "title": "Sérum Éclat", "description": "Un sérum hydratant qui donne à votre peau un éclat radieux." },
+        { "title": "Crème de Nuit Réparatrice", "description": "Revitalisez votre peau pendant la nuit avec notre formule nourrissante." },
+        { "title": "Élixir d'Hydratation", "description": "Un élixir léger qui retient l'humidité et améliore l'élasticité." },
+        { "title": "Boost de Vitamine C", "description": "Illumine et unifie le teint pour un éclat naturel." },
+        { "title": "Gel d'Aloès Apaisant", "description": "Calme les rougeurs et hydrate les peaux sensibles." },
+        { "title": "Écran Solaire SPF 50+", "description": "Protège des rayons UV nocifs avec une formule légère." },
+        { "title": "Crème au Collagène", "description": "Améliore la fermeté et réduit les ridules." },
+        { "title": "Gommage Exfoliant", "description": "Élimine les cellules mortes pour une texture plus lisse." },
+        { "title": "Masque de Nuit", "description": "Nourrit en profondeur pendant que vous dormez." },
+        { "title": "Brume au Thé Vert", "description": "Rafraîchit et hydrate tout au long de la journée." },
+        { "title": "Gel Yeux Revivifiant", "description": "Réduit les poches et les cernes." },
+        { "title": "Toner à l'Eau de Rose", "description": "Équilibre le pH de la peau et resserre les pores." },
+        { "title": "Sérum à la Niacinamide", "description": "Minimise les pores et améliore la barrière cutanée." },
+        { "title": "Baume Hydratant pour les Lèvres", "description": "Garde les lèvres douces et hydratées." },
+        { "title": "Crème Glow Your Skin", "description": "Hydrate et réapprovisionne avec un éclat naturel." },
+        { "title": "Masque à l'Argile au Charbon", "description": "Détoxifie et purifie la peau." },
+        { "title": "Sérum Complexe de Peptides", "description": "Améliore l'élasticité et lisse les ridules." },
+        { "title": "Gouttes d'Acide Hyaluronique", "description": "Retient l'humidité intense pour une peau repulpée." }
+    ],
+
     "about_title": "À Propos de Nous",
     "about_text_1": "Chez Glow Your Skin, nous pensons que les soins de la peau ne sont pas qu'une routine, mais un rituel d'amour-propre. Notre mission est de créer des produits simples, efficaces et doux qui célèbrent la beauté naturelle de chaque type de peau. Avec un mélange d'ingrédients purs, de formulations apaisantes et un design élégant, nous voulons apporter une touche de calme et d'éclat à votre routine de soins quotidienne.",
     "about_text_2": "Parce qu'une peau éclatante est toujours tendance.",
@@ -27,7 +49,7 @@
     "contact_message_placeholder": "Votre Message",
     "contact_cta": "Envoyer le Message",
     "footer_rights": "Glow Your Skin. Tous droits réservés.",
-    "products_title": "Produits Phares",
+
     "testimonials_title": "Ce que Disent Nos Clients",
     "our_story_title": "Notre Parcours vers l'Éclat",
     "our_story_text_1": "Tout a commencé avec une idée simple : les soins de la peau doivent être purs, efficaces et agréables à utiliser. Frustrée par les produits pleins de produits chimiques agressifs, notre fondatrice, une esthéticienne passionnée, a décidé de créer une ligne qui célèbre le pouvoir des ingrédients naturels.",

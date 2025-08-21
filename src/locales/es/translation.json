@@ -39,6 +39,22 @@
         { "title": "Gotas de Ácido Hialurónico", "description": "Retiene la humedad intensa para una piel tersa." }
     ],
 
+    "testimonials_title": "Lo Que Dicen Nuestros Clientes",
+    "testimonials": [
+        {
+        "name": "Jane Doe",
+        "review": "Este suero ha transformado completamente mi piel. ¡Se siente tan hidratada y se ve radiante! Un imprescindible en mi rutina."
+        },
+        {
+        "name": "Samantha Lee",
+        "review": "La Crema de Noche Reparadora ha cambiado las reglas del juego. Me levanto con mi piel suave, nutrida y tersa. ¡Absolutamente me encanta!"
+        },
+        {
+        "name": "Alex Rodriguez",
+        "review": "Tengo la piel sensible y el Gel de Aloe Calmante es un salvavidas. Calma mi enrojecimiento al instante y se siente increíblemente refrescante."
+        }
+    ],
+
     "about_title": "Acerca de Nosotros",
     "about_text_1": "En Glow Your Skin, creemos que el cuidado de la piel no es solo una rutina, es un ritual de amor propio. Nuestra misión es crear productos para el cuidado de la piel simples, efectivos y suaves que celebran la belleza natural en cada tipo de piel. Con una mezcla de ingredientes limpios, formulaciones calmantes y un diseño elegante, nuestro objetivo es aportar un toque de calma y brillo a tu rutina diaria de cuidado de la piel.",
     "about_text_2": "Porque una piel radiante siempre está de moda.",
@@ -49,7 +65,6 @@
     "contact_message_placeholder": "Tu Mensaje",
     "contact_cta": "Enviar Mensaje",
     "footer_rights": "Glow Your Skin. Todos los derechos reservados.",
-    "testimonials_title": "Lo que Dicen Nuestros Clientes",
     "our_story_title": "Nuestro Viaje hacia el Resplandor",
     "our_story_text_1": "Todo comenzó con una idea simple: el cuidado de la piel debe ser puro, efectivo y un placer de usar. Frustrada con productos llenos de químicos agresivos, nuestra fundadora, una esteticista apasionada, se propuso crear una línea que celebre el poder de los ingredientes naturales.",
     "our_story_text_2": "Cada producto es un testimonio de nuestro compromiso con la belleza limpia y las prácticas sostenibles. Creemos en la creación de un cuidado de la piel que no solo te haga lucir bien, sino que también te haga sentir bien con lo que pones en tu piel.",

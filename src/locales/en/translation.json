@@ -39,6 +39,22 @@
         { "title": "Hyaluronic Acid Drops", "description": "Locks in intense moisture for plump skin." }
     ],
 
+    "testimonials_title": "What Our Clients Say",
+    "testimonials": [
+        {
+            "name": "Jane Doe",
+            "review": "This serum has completely transformed my skin. It feels so hydrated and looks radiant! A must-have in my routine."
+        },
+        {
+            "name": "Samantha Lee",
+            "review": "The Night Repair Cream is a game-changer. I wake up with my skin feeling soft, nourished, and plump. Absolutely love it!"
+        },
+        {
+            "name": "Alex Rodriguez",
+            "review": "I have sensitive skin and the Soothing Aloe Gel is a lifesaver. It calms my redness instantly and feels incredibly refreshing."
+        }
+    ],
+
     "about_title": "About Us",
     "about_text_1": "At Glow Your Skin, we believe that skincare is not just a routine—it's a ritual of self-love. Our mission is to create simple, effective, and gentle skincare products that celebrate the natural beauty in every skin type. With a blend of clean ingredients, soothing formulations, and elegant design, we aim to bring a touch of calm and glow to your everyday skincare routine.",
     "about_text_2": "Because glowing skin is always in.",
@@ -49,7 +65,6 @@
     "contact_message_placeholder": "Your Message",
     "contact_cta": "Send Message",
     "footer_rights": "Glow Your Skin. All rights reserved.",
-    "testimonials_title": "What Our Clients Say",
     "our_story_title": "Our Journey to Glow",
     "our_story_text_1": "It all began with a simple idea: skincare should be pure, effective, and a joy to use. Frustrated with products full of harsh chemicals, our founder, a passionate esthetician, set out to create a line that celebrates the power of natural ingredients.",
     "our_story_text_2": "Every product is a testament to our commitment to clean beauty and sustainable practices. We believe in creating skincare that not only makes you look good but also makes you feel good about what you're putting on your skin.",

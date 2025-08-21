@@ -1,27 +1,23 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
-const testimonials = [
-    {
-        name: "Jane Doe",
-        review: "This serum has completely transformed my skin. It feels so hydrated and looks radiant! A must-have in my routine.",
-        image: "",
-    },
-    {
-        name: "Samantha Lee",
-        review: "The Night Repair Cream is a game-changer. I wake up with my skin feeling soft, nourished, and plump. Absolutely love it!",
-        image: "",
-    },
-    {
-        name: "Alex Rodriguez",
-        review: "I have sensitive skin and the Soothing Aloe Gel is a lifesaver. It calms my redness instantly and feels incredibly refreshing.",
-        image: "",
-    },
-];
+// Update the interface to include the optional image property
+interface Testimonial {
+    name: string;
+    review: string;
+    image?: string;
+}
 
 const Testimonials = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
+    const { t } = useTranslation();
+
+    const testimonials = t("testimonials", { returnObjects: true }) as Testimonial[];
+
+    // This is a placeholder for a real image, assuming you'll have profile pictures later
+    const placeholderImage = "https://via.placeholder.com/80";
 
     return (
         <section id="testimonials" className="bg-light py-5" ref={ref}>
@@ -32,7 +28,7 @@ const Testimonials = () => {
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
                     transition={{ duration: 0.8 }}
                 >
-                    What Our Clients Say
+                    {t("testimonials_title")}
                 </motion.h2>
                 <div className="row justify-content-center g-4">
                     {testimonials.map((testimonial, index) => (
@@ -46,7 +42,7 @@ const Testimonials = () => {
                             <div className="card h-100 shadow rounded-3 border-0 p-4">
                                 <div className="card-body d-flex flex-column align-items-center text-center">
                                     <img
-                                        src={testimonial.image}
+                                        src={testimonial.image || placeholderImage}
                                         alt={testimonial.name}
                                         className="rounded-circle mb-3"
                                         style={{ width: "80px", height: "80px", objectFit: "cover" }}

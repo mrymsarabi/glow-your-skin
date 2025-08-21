@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next'; // Import the hook
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <motion.footer 
             className="bg-dark text-light text-center py-4 mt-5"
@@ -10,7 +13,7 @@ const Footer = () => {
             transition={{ duration: 0.8 }}
         >
             <p className="m-0 small">
-                &copy; {new Date().getFullYear()} Glow Your Skin. All rights reserved.
+                &copy; {new Date().getFullYear()} {t("footer_rights")}
             </p>
         </motion.footer>
     );

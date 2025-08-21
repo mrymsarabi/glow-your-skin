@@ -85,5 +85,7 @@
     "contact_name_placeholder": "Tu Nombre",
     "contact_email_placeholder": "Tu Correo Electrónico",
     "contact_message_placeholder": "Tu Mensaje",
-    "contact_cta": "Enviar Mensaje"
+    "contact_cta": "Enviar Mensaje",
+
+    "footer_rights": "Glow Your Skin. Todos los derechos reservados."
 }

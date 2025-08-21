@@ -63,13 +63,20 @@
     "about_text_1": "En <1>Glow Your Skin</1>, creemos que el cuidado de la piel no es solo una rutina, es un ritual de amor propio. Nuestra misión es crear productos para el cuidado de la piel simples, efectivos y suaves que celebren la belleza natural en cada tipo de piel. Con una mezcla de ingredientes limpios, formulaciones calmantes y un diseño elegante, nuestro objetivo es aportar un toque de calma y resplandor a tu rutina diaria de cuidado de la piel.",
     "about_text_2": "Porque una piel radiante siempre está de moda.",
 
-    "contact_title": "Ponte en Contacto",
-    "contact_slogan": "¿Tienes preguntas o quieres saber más sobre nuestros productos? Nos encantaría saber de ti.",
-    "contact_name_placeholder": "Tu Nombre",
-    "contact_email_placeholder": "Tu Correo Electrónico",
-    "contact_message_placeholder": "Tu Mensaje",
-    "contact_cta": "Enviar Mensaje",
-    "footer_rights": "Glow Your Skin. Todos los derechos reservados.",
     "blog_title": "Guías de Cuidado de la Piel",
-    "blog_read_more": "Leer Más"
+    "blog_read_more": "Leer más",
+    "blog_posts": [
+        {
+            "title": "5 Consejos Para una Piel Resplandeciente en Verano",
+            "excerpt": "Aprende a mantener tu piel hidratada y protegida durante los meses de verano con estos sencillos consejos."
+        },
+        {
+            "title": "El Poder del Sérum de Vitamina C",
+            "excerpt": "Descubre los increíbles beneficios de la Vitamina C y por qué debería ser un básico en tu rutina de cuidado de la piel."
+        },
+        {
+            "title": "Comprendiendo tu Tipo de Piel",
+            "excerpt": "Una guía para identificar tu tipo de piel y elegir los productos adecuados para una tez más saludable."
+        }
+    ]
 }

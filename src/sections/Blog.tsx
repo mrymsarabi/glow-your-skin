@@ -1,27 +1,21 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
-const blogPosts = [
-    {
-        title: "5 Tips for a Glowing Summer Skin",
-        image: "",
-        excerpt: "Learn how to keep your skin hydrated and protected during the summer months with these simple tips.",
-    },
-    {
-        title: "The Power of Vitamin C Serum",
-        image: "",
-        excerpt: "Discover the amazing benefits of Vitamin C and why it should be a staple in your skincare routine.",
-    },
-    {
-        title: "Understanding Your Skin Type",
-        image: "",
-        excerpt: "A guide to identifying your skin type and choosing the right products for a healthier complexion.",
-    },
-];
+// Update the interface to include the optional image property
+interface BlogPost {
+    title: string;
+    excerpt: string;
+    image?: string;
+}
 
 const Blog = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
+    const { t } = useTranslation();
+
+    const blogPosts = t("blog_posts", { returnObjects: true }) as BlogPost[];
+    const placeholderImage = "https://via.placeholder.com/400x200";
 
     return (
         <section id="blog" className="py-5 bg-secondary-light" ref={ref}>
@@ -32,7 +26,7 @@ const Blog = () => {
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Skincare Guides
+                    {t("blog_title")}
                 </motion.h2>
                 <div className="row justify-content-center g-4">
                     {blogPosts.map((post, index) => (
@@ -45,7 +39,7 @@ const Blog = () => {
                         >
                             <div className="card h-100 shadow-sm rounded-3 border-0">
                                 <img
-                                    src={post.image}
+                                    src={post.image || placeholderImage}
                                     className="card-img-top rounded-top"
                                     alt={post.title}
                                     style={{ height: "200px", objectFit: "cover" }}
@@ -53,7 +47,7 @@ const Blog = () => {
                                 <div className="card-body">
                                     <h5 className="card-title fw-bold text-dark">{post.title}</h5>
                                     <p className="card-text text-muted">{post.excerpt}</p>
-                                    <a href="#" className="btn btn-sm btn-primary mt-3">Read More</a>
+                                    <a href="#" className="btn btn-sm btn-primary mt-3">{t("blog_read_more")}</a>
                                 </div>
                             </div>
                         </motion.div>

@@ -63,14 +63,20 @@
     "about_text_1": "Chez <1>Glow Your Skin</1>, nous pensons que les soins de la peau ne sont pas qu'une routine — c'est un rituel d'amour-propre. Notre mission est de créer des produits de soin simples, efficaces et doux qui célèbrent la beauté naturelle de chaque type de peau. Avec un mélange d'ingrédients propres, de formulations apaisantes et un design élégant, nous visons à apporter une touche de calme et d'éclat à votre routine de soin quotidienne.",
     "about_text_2": "Parce qu'une peau éclatante est toujours tendance.",
 
-    "contact_title": "Contactez-Nous",
-    "contact_slogan": "Vous avez des questions ou souhaitez en savoir plus sur nos produits ? Nous serions ravis de vous entendre !",
-    "contact_name_placeholder": "Votre Nom",
-    "contact_email_placeholder": "Votre E-mail",
-    "contact_message_placeholder": "Votre Message",
-    "contact_cta": "Envoyer le Message",
-    "footer_rights": "Glow Your Skin. Tous droits réservés.",
-
     "blog_title": "Guides de Soins de la Peau",
-    "blog_read_more": "Lire la suite"
+    "blog_read_more": "Lire la suite",
+    "blog_posts": [
+        {
+            "title": "5 Astuces Pour une Peau Éclatante en Été",
+            "excerpt": "Apprenez à garder votre peau hydratée et protégée pendant les mois d'été avec ces astuces simples."
+        },
+        {
+            "title": "Le Pouvoir du Sérum à la Vitamine C",
+            "excerpt": "Découvrez les bienfaits incroyables de la Vitamine C et pourquoi elle devrait être un incontournable de votre routine de soins de la peau."
+        },
+        {
+            "title": "Comprendre Votre Type de Peau",
+            "excerpt": "Un guide pour identifier votre type de peau et choisir les bons produits pour un teint plus sain."
+        }
+    ]
 }

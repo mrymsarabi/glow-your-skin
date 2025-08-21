@@ -78,5 +78,12 @@
             "title": "Comprendre Votre Type de Peau",
             "excerpt": "Un guide pour identifier votre type de peau et choisir les bons produits pour un teint plus sain."
         }
-    ]
+    ],
+
+    "contact_title": "Contactez-Nous",
+    "contact_slogan": "Vous avez des questions ou souhaitez en savoir plus sur nos produits ? Nous serions ravis de vous entendre !",
+    "contact_name_placeholder": "Votre Nom",
+    "contact_email_placeholder": "Votre Email",
+    "contact_message_placeholder": "Votre Message",
+    "contact_cta": "Envoyer le Message"
 }

@@ -78,5 +78,12 @@
             "title": "Understanding Your Skin Type",
             "excerpt": "A guide to identifying your skin type and choosing the right products for a healthier complexion."
         }
-    ]
+    ],
+
+    "contact_title": "Get in Touch",
+    "contact_slogan": "Have questions or want to know more about our products? We'd love to hear from you!",
+    "contact_name_placeholder": "Your Name",
+    "contact_email_placeholder": "Your Email",
+    "contact_message_placeholder": "Your Message",
+    "contact_cta": "Send Message"
 }

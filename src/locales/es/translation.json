@@ -78,5 +78,12 @@
             "title": "Comprendiendo tu Tipo de Piel",
             "excerpt": "Una guía para identificar tu tipo de piel y elegir los productos adecuados para una tez más saludable."
         }
-    ]
+    ],
+
+    "contact_title": "Ponte en Contacto",
+    "contact_slogan": "¿Tienes preguntas o quieres saber más sobre nuestros productos? ¡Nos encantaría saber de ti!",
+    "contact_name_placeholder": "Tu Nombre",
+    "contact_email_placeholder": "Tu Correo Electrónico",
+    "contact_message_placeholder": "Tu Mensaje",
+    "contact_cta": "Enviar Mensaje"
 }

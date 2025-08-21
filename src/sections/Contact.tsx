@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="contact" className="py-5 bg-light">
             <div className="container px-4 px-md-0">
@@ -13,7 +16,7 @@ const Contact = () => {
                             viewport={{ once: true, amount: 0.5 }}
                             transition={{ duration: 0.8 }}
                         >
-                            Get in Touch
+                            {t("contact_title")}
                         </motion.h2>
                         <motion.p
                             className="lead text-dark mb-5"
@@ -22,7 +25,7 @@ const Contact = () => {
                             viewport={{ once: true, amount: 0.5 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            Have questions or want to know more about our products? We'd love to hear from you!
+                            {t("contact_slogan")}
                         </motion.p>
                     </div>
                 </div>
@@ -36,18 +39,18 @@ const Contact = () => {
                     >
                         <input
                             type="text"
-                            placeholder="Your Name"
+                            placeholder={t("contact_name_placeholder")}
                             className="form-control form-control-lg mb-3"
                             required
                         />
                         <input
                             type="email"
-                            placeholder="Your Email"
+                            placeholder={t("contact_email_placeholder")}
                             className="form-control form-control-lg mb-3"
                             required
                         />
                         <textarea
-                            placeholder="Your Message"
+                            placeholder={t("contact_message_placeholder")}
                             className="form-control form-control-lg mb-4"
                             rows={4}
                             required
@@ -56,7 +59,7 @@ const Contact = () => {
                             type="submit"
                             className="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg w-100"
                         >
-                            Send Message
+                            {t("contact_cta")}
                         </button>
                     </motion.form>
                 </div>

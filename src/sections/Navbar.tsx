@@ -1,37 +1,75 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import ThemeSwitcher from "../components/ThemeSwitcher"; 
+import { useTranslation } from "react-i18next";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false); // New state for dropdown
+
+    const { t, i18n } = useTranslation();
 
     const handleShow = () => setShow(prev => !prev);
+
+    const handleLanguageChange = (lng: string) => {
+        i18n.changeLanguage(lng);
+        setShowDropdown(false); // Close dropdown after selection
+    };
+
+    const toggleDropdown = () => setShowDropdown(prev => !prev); // New function to toggle dropdown
 
     const mobileMenuVariants = {
         hidden: { opacity: 0, y: -20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
     };
 
+    const navLinks = [
+        { key: "nav_home", href: "#home" },
+        { key: "nav_products", href: "#products" },
+        { key: "nav_testimonials", href: "#testimonials" },
+        { key: "nav_our_story", href: "#ourstory" },
+        { key: "nav_about_us", href: "#aboutus" },
+        { key: "nav_blog", href: "#blog" },
+        { key: "nav_contact", href: "#contact" },
+    ];
+
     return (
         <nav className="bg-light text-dark py-3 px-4 border-bottom shadow position-sticky top-0" style={{ zIndex: 1030 }}>
-            {/* Top Navbar Row */}
             <div className="d-flex justify-content-between align-items-center">
                 <h1 className="h4 m-0 fw-bold">Glow Your Skin</h1>
 
                 {/* Desktop Nav */}
                 <ul className="d-none d-md-flex list-unstyled m-0 align-items-center">
-                    {["Home", "Products", "Testimonials", "Our Story", "About Us", "Blog", "Contact"].map((item, index) => (
+                    {navLinks.map((link, index) => (
                         <li key={index} className="mx-3">
                             <a 
-                                href={`#${item.toLowerCase().replace(/\s/g, '')}`} 
+                                href={link.href} 
                                 className="text-decoration-none text-dark fw-medium"
                             >
-                                {item}
+                                {t(link.key)}
                             </a>
                         </li>
                     ))}
-                    <li className="ms-3">
+                    <li className="ms-3 d-flex align-items-center">
                         <ThemeSwitcher />
+                        <span className="vr mx-2"></span>
+
+                        {/* Language Dropdown for Desktop */}
+                        <div className="dropdown">
+                            <button 
+                                className="btn btn-sm dropdown-toggle" 
+                                type="button" 
+                                onClick={toggleDropdown}
+                                aria-expanded={showDropdown}
+                            >
+                                {i18n.language.toUpperCase()}
+                            </button>
+                            <ul className={`dropdown-menu dropdown-menu-end ${showDropdown ? 'show' : ''}`}>
+                                <li><button className="dropdown-item" onClick={() => handleLanguageChange('en')}>English</button></li>
+                                <li><button className="dropdown-item" onClick={() => handleLanguageChange('fr')}>Français</button></li>
+                                <li><button className="dropdown-item" onClick={() => handleLanguageChange('es')}>Español</button></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
 
@@ -58,17 +96,25 @@ const Navbar = () => {
                     animate="visible"
                 >
                     <ul className="list-unstyled text-center m-0">
-                        {["Home", "Products", "Testimonials", "Our Story", "About Us", "Blog", "Contact"].map((item, index) => (
+                        {navLinks.map((link, index) => (
                             <li key={index} className="my-2">
                                 <a
-                                    href={`#${item.toLowerCase().replace(/\s/g, '')}`}
+                                    href={link.href}
                                     className="text-decoration-none text-dark fw-bold fs-5"
                                     onClick={handleShow}
                                 >
-                                    {item}
+                                    {t(link.key)}
                                 </a>
                             </li>
                         ))}
+                        <li className="my-2 d-flex justify-content-center">
+                            {/* Simple language buttons for mobile */}
+                            <button className="btn btn-sm" onClick={() => { handleLanguageChange('en'); handleShow(); }}>EN</button>
+                            <span className="vr mx-2"></span>
+                            <button className="btn btn-sm" onClick={() => { handleLanguageChange('es'); handleShow(); }}>ES</button>
+                            <span className="vr mx-2"></span>
+                            <button className="btn btn-sm" onClick={() => { handleLanguageChange('fr'); handleShow(); }}>FR</button>
+                        </li>
                     </ul>
                 </motion.div>
             )}

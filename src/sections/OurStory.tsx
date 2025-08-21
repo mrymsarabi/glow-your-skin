@@ -1,9 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next"; // Import the hook
 
 const OurStory = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
+    const { t } = useTranslation(); // Initialize the hook
 
     return (
         <section id="our-story" className="py-5 bg-white" ref={ref}>
@@ -17,8 +19,8 @@ const OurStory = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <img
-                            src=""
-                            alt="Brand Founder"
+                            src="/src/assets/images/our-story.jpg"
+                            alt={t("our_story_title")}
                             className="img-fluid rounded-3 shadow-lg"
                         />
                     </motion.div>
@@ -30,12 +32,12 @@ const OurStory = () => {
                         animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -50 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <h2 className="display-5 fw-bold text-dark mb-4">Our Journey to Glow</h2>
+                        <h2 className="display-5 fw-bold text-dark mb-4">{t("our_story_title")}</h2>
                         <p className="lead text-dark">
-                            It all began with a simple idea: skincare should be pure, effective, and a joy to use. Frustrated with products full of harsh chemicals, our founder, a passionate esthetician, set out to create a line that celebrates the power of natural ingredients.
+                            {t("our_story_text_1")}
                         </p>
                         <p className="lead text-dark mb-0">
-                            Every product is a testament to our commitment to clean beauty and sustainable practices. We believe in creating skincare that not only makes you look good but also makes you feel good about what you're putting on your skin.
+                            {t("our_story_text_2")}
                         </p>
                     </motion.div>
                 </div>

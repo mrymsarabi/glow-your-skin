@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next"; // Import the hook
-import heroImage from "/src/assets/images/hero01.png";
+import { useTranslation } from "react-i18next";
+import heroImage from "/src/assets/images/hero12.png";
+import heroImage2 from "/src/assets/images/hero08.png";
+import heroImage3 from "/src/assets/images/hero06.png";
 import Image from "../components/Image";
 import Button from "../components/Button";
 import GradientText from "../components/GradientText";
 
 const Hero = () => {
-    const { t } = useTranslation(); // Initialize the hook
+    const { t } = useTranslation();
 
     return (
         <section className="container-fluid my-5 py-5 bg-secondary-light">
@@ -52,8 +54,13 @@ const Hero = () => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
+                            className="d-flex"
                         >
-                            <Image src={heroImage} width="90%" alt={t("hero_slogan_title")} className="img-fluid rounded-3 shadow-lg" />
+                            <div className="me-3">
+                                <Image src={heroImage2} width="100%" alt={t("hero_slogan_title")} className="img-fluid rounded-3 shadow-lg mb-3" />
+                                <Image src={heroImage} width="100%" alt={t("hero_slogan_title")} className="img-fluid rounded-3 shadow-lg mt-3" />
+                            </div>
+                            <Image src={heroImage3} width="65%" alt={t("hero_slogan_title")} className="img-fluid rounded-3 shadow-lg" />
                         </motion.div>
                     </div>
                 </div>

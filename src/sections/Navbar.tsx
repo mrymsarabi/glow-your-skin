@@ -16,7 +16,7 @@ const Navbar = () => {
         setShowDropdown(false);
     };
 
-    const toggleDropdown = () => setShowDropdown(prev => !showDropdown);
+    const toggleDropdown = () => setShowDropdown(prev => !prev);
 
     const mobileMenuVariants = {
         hidden: { opacity: 0, y: -20 },
@@ -115,6 +115,8 @@ const Navbar = () => {
                             <button className="btn btn-sm" onClick={() => { handleLanguageChange('es'); handleShow(); }}>ES</button>
                             <span className="vr mx-2"></span>
                             <button className="btn btn-sm" onClick={() => { handleLanguageChange('fr'); handleShow(); }}>FR</button>
+                            <span className="vr mx-2"></span>
+                            <button className="btn btn-sm" onClick={() => { handleLanguageChange('it'); handleShow(); }}>IT</button>
                         </li>
                     </ul>
                 </motion.div>

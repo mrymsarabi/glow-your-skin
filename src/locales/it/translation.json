@@ -43,15 +43,18 @@
     "testimonials": [
         {
             "name": "Jane Doe",
-            "review": "Questo siero ha completamente trasformato la mia pelle. Si sente così idratata e appare radiosa! Un must-have nella mia routine."
+            "review": "Questo siero ha completamente trasformato la mia pelle. Si sente così idratata e appare radiosa! Un must-have nella mia routine.",
+            "image": "/src/assets/images/hero01.png"
         },
         {
             "name": "Samantha Lee",
-            "review": "La Crema Notte Riparatrice è un vero punto di svolta. Mi sveglio con la pelle morbida, nutrita e rimpolpata. La adoro assolutamente!"
+            "review": "La Crema Notte Riparatrice è un vero punto di svolta. Mi sveglio con la pelle morbida, nutrita e rimpolpata. La adoro assolutamente!",
+            "image": "/src/assets/images/hero03.png"
         },
         {
             "name": "Alex Rodriguez",
-            "review": "Ho la pelle sensibile e il Gel Lenitivo all'Aloe è un salvavita. Calma il mio rossore all'istante e mi fa sentire incredibilmente rinfrescata."
+            "review": "Ho la pelle sensibile e il Gel Lenitivo all'Aloe è un salvavita. Calma il mio rossore all'istante e mi fa sentire incredibilmente rinfrescata.",
+            "image": "/src/assets/images/hero07.png"
         }
     ],
 

@@ -19,7 +19,7 @@ const OurStory = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <img
-                            src="/src/assets/images/our-story.jpg"
+                            src="/src/assets/images/our_story.png"
                             alt={t("our_story_title")}
                             className="img-fluid rounded-3 shadow-lg"
                         />

@@ -5,7 +5,7 @@ import ThemeSwitcher from "../components/ThemeSwitcher";
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
-    const [showDropdown, setShowDropdown] = useState(false); // New state for dropdown
+    const [showDropdown, setShowDropdown] = useState(false);
 
     const { t, i18n } = useTranslation();
 
@@ -13,10 +13,10 @@ const Navbar = () => {
 
     const handleLanguageChange = (lng: string) => {
         i18n.changeLanguage(lng);
-        setShowDropdown(false); // Close dropdown after selection
+        setShowDropdown(false);
     };
 
-    const toggleDropdown = () => setShowDropdown(prev => !prev); // New function to toggle dropdown
+    const toggleDropdown = () => setShowDropdown(prev => !showDropdown);
 
     const mobileMenuVariants = {
         hidden: { opacity: 0, y: -20 },
@@ -55,7 +55,7 @@ const Navbar = () => {
                         <span className="vr mx-2"></span>
 
                         {/* Language Dropdown for Desktop */}
-                        <div className="dropdown">
+                        <div className="dropdown position-relative"> {/* Change 1: Add position-relative */}
                             <button 
                                 className="btn btn-sm dropdown-toggle" 
                                 type="button" 
@@ -64,10 +64,11 @@ const Navbar = () => {
                             >
                                 {i18n.language.toUpperCase()}
                             </button>
-                            <ul className={`dropdown-menu dropdown-menu-end ${showDropdown ? 'show' : ''}`}>
+                            <ul className={`dropdown-menu dropdown-menu-end mt-2 ${showDropdown ? 'show' : ''}`} style={{ left: 'auto', right: 0 }}> {/* Change 2: Add inline style for right alignment */}
                                 <li><button className="dropdown-item" onClick={() => handleLanguageChange('en')}>English</button></li>
                                 <li><button className="dropdown-item" onClick={() => handleLanguageChange('fr')}>Français</button></li>
                                 <li><button className="dropdown-item" onClick={() => handleLanguageChange('es')}>Español</button></li>
+                                <li><button className="dropdown-item" onClick={() => handleLanguageChange('it')}>Italiano</button></li>
                             </ul>
                         </div>
                     </li>

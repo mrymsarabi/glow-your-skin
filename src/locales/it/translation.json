@@ -1,0 +1,91 @@
+{
+    "nav_home": "Home",
+    "nav_products": "Prodotti",
+    "nav_testimonials": "Testimonianze",
+    "nav_our_story": "La Nostra Storia",
+    "nav_about_us": "Chi Siamo",
+    "nav_blog": "Blog",
+    "nav_contact": "Contatti",
+    "app_name": "Glow Your Skin",
+
+    "hero_slogan_title": "Glow Your Skin",
+    "hero_slogan": "Skincare pulita e consapevole per una pelle radiosa.",
+    "hero_cta": "Acquista Ora",
+    "hero_text_part1": "In",
+    "hero_text_part2": "Glow Your Skin",
+    "hero_text_part3": ", crediamo che la",
+    "hero_text_part4": "skincare sia amore per sé stessi",
+    "hero_text_part5": ". Sfruttiamo il potere di ingredienti puri e naturali per creare prodotti che nutrono e ringiovaniscono, celebrando la tua radiosità unica e lasciando la tua pelle luminosa.",
+
+    "products_title": "Prodotti in Evidenza",
+    "products": [
+        { "title": "Siero Illuminante", "description": "Un siero idratante che dona alla pelle una lucentezza radiosa." },
+        { "title": "Crema Notte Riparatrice", "description": "Rivitalizza la tua pelle durante la notte con la nostra formula nutriente." },
+        { "title": "Elisir di Idratazione", "description": "Un elisir leggero che trattiene l'umidità e aumenta l'elasticità." },
+        { "title": "Boost di Vitamina C", "description": "Illumina e uniforma il tono della pelle per una radiosità naturale." },
+        { "title": "Gel Lenitivo all'Aloe", "description": "Calma il rossore e idrata la pelle sensibile." },
+        { "title": "Crema Solare SPF 50+", "description": "Protegge dai dannosi raggi UV con una formula leggera." },
+        { "title": "Crema al Collagene", "description": "Migliora la compattezza e riduce le linee sottili." },
+        { "title": "Scrub Esfoliante", "description": "Rimuove le cellule morte per una texture più liscia." },
+        { "title": "Maschera Notturna", "description": "Nutre in profondità mentre dormi." },
+        { "title": "Nebbia al Tè Verde", "description": "Rinfresca e idrata durante il giorno." },
+        { "title": "Gel Rivitalizzante Occhi", "description": "Riduce il gonfiore e le occhiaie." },
+        { "title": "Tonico all'Acqua di Rose", "description": "Riequilibra il pH della pelle e restringe i pori." },
+        { "title": "Siero alla Niacinamide", "description": "Minimizza i pori e migliora la barriera cutanea." },
+        { "title": "Balsamo Labbra Idratante", "description": "Mantiene le labbra morbide e idratate." },
+        { "title": "Crema Glow Your Skin", "description": "Idrata e rigenera con una lucentezza naturale." },
+        { "title": "Maschera all'Argilla e Carbone", "description": "Disintossica e purifica la pelle." },
+        { "title": "Siero al Complesso Peptidico", "description": "Aumenta l'elasticità e leviga le linee sottili." },
+        { "title": "Gocce di Acido Ialuronico", "description": "Trattiene l'idratazione intensa per una pelle compatta." }
+    ],
+
+    "testimonials_title": "Cosa Dicono i Nostri Clienti",
+    "testimonials": [
+        {
+            "name": "Jane Doe",
+            "review": "Questo siero ha completamente trasformato la mia pelle. Si sente così idratata e appare radiosa! Un must-have nella mia routine."
+        },
+        {
+            "name": "Samantha Lee",
+            "review": "La Crema Notte Riparatrice è un vero punto di svolta. Mi sveglio con la pelle morbida, nutrita e rimpolpata. La adoro assolutamente!"
+        },
+        {
+            "name": "Alex Rodriguez",
+            "review": "Ho la pelle sensibile e il Gel Lenitivo all'Aloe è un salvavita. Calma il mio rossore all'istante e mi fa sentire incredibilmente rinfrescata."
+        }
+    ],
+
+    "our_story_title": "Il Nostro Percorso verso la Luminosità",
+    "our_story_text_1": "Tutto è iniziato con un'idea semplice: la skincare dovrebbe essere pura, efficace e un piacere da usare. Frustrata da prodotti pieni di sostanze chimiche aggressive, la nostra fondatrice, un'estetista appassionata, ha deciso di creare una linea che celebrasse il potere degli ingredienti naturali.",
+    "our_story_text_2": "Ogni prodotto è una testimonianza del nostro impegno per la bellezza pulita e le pratiche sostenibili. Crediamo nella creazione di una skincare che non solo ti faccia apparire bene, ma che ti faccia anche sentire bene per ciò che stai mettendo sulla tua pelle.",
+
+    "about_title": "Chi Siamo",
+    "about_text_1": "In <1>Glow Your Skin</1>, crediamo che la skincare non sia solo una routine, ma un rituale di amore per sé stessi. La nostra missione è creare prodotti per la cura della pelle semplici, efficaci e delicati che celebrino la bellezza naturale in ogni tipo di pelle. Con una miscela di ingredienti puliti, formulazioni lenitive e un design elegante, miriamo a portare un tocco di calma e luminosità alla tua routine quotidiana di skincare.",
+    "about_text_2": "Perché una pelle luminosa è sempre di moda.",
+
+    "blog_title": "Guide per la Skincare",
+    "blog_read_more": "Leggi di più",
+    "blog_posts": [
+        {
+            "title": "5 Consigli per una Pelle Estiva Luminosa",
+            "excerpt": "Scopri come mantenere la pelle idratata e protetta durante i mesi estivi con questi semplici consigli."
+        },
+        {
+            "title": "Il Potere del Siero alla Vitamina C",
+            "excerpt": "Scopri i fantastici benefici della Vitamina C e perché dovrebbe essere un elemento fondamentale nella tua routine di skincare."
+        },
+        {
+            "title": "Capire il Tuo Tipo di Pelle",
+            "excerpt": "Una guida per identificare il tuo tipo di pelle e scegliere i prodotti giusti per una carnagione più sana."
+        }
+    ],
+
+    "contact_title": "Mettiti in Contatto",
+    "contact_slogan": "Hai domande o vuoi saperne di più sui nostri prodotti? Ci piacerebbe sentirti!",
+    "contact_name_placeholder": "Il tuo nome",
+    "contact_email_placeholder": "La tua email",
+    "contact_message_placeholder": "Il tuo messaggio",
+    "contact_cta": "Invia Messaggio",
+
+    "footer_rights": "Glow Your Skin. Tutti i diritti riservati."
+}

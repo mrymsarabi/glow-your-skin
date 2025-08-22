@@ -13,7 +13,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, title, description }) 
                 src={image}
                 className="card-img-top rounded-2"
                 alt={title || "Product Image"}
-                style={{ objectFit: "cover", height: "250px" }}
+                style={{ objectFit: "cover", height: "400px" }}
             />
             <div className="card-body">
                 <h5 className="card-title fw-bold">{title}</h5>

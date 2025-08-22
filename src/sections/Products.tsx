@@ -18,8 +18,8 @@ const Products = () => {
 
     // Add image paths back to the objects, and explicitly type the 'product' parameter
     const productsWithImages = products.map((product, index) => ({
-      ...product,
-      image: `/products/product0${index + 1}.png`
+        ...product,
+        image: `/products/product${String(index + 1).padStart(2, "0")}.png`
     }));
 
     return (

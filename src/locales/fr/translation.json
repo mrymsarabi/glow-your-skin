@@ -44,17 +44,17 @@
         {
             "name": "Jane Doe",
             "review": "Ce sérum a complètement transformé ma peau. Elle est si hydratée et semble radieuse ! Un incontournable de ma routine.",
-            "image": "/src/assets/images/hero01.png"
+            "image": "/images/hero01.png"
         },
         {
             "name": "Samantha Lee",
             "review": "La Crème de Nuit Réparatrice est une révolution. Je me réveille avec une peau douce, nourrie et repulpée. J'adore !",
-            "image": "/src/assets/images/hero03.png"
+            "image": "/images/hero03.png"
         },
         {
             "name": "Alex Rodriguez",
             "review": "J'ai la peau sensible et le Gel d'Aloès Apaisant est une bouée de sauvetage. Il calme instantanément mes rougeurs et est incroyablement rafraîchissant.",
-            "image": "/src/assets/images/hero07.png"
+            "image": "/images/hero07.png"
         }
     ],
 

@@ -44,17 +44,17 @@
         {
             "name": "Jane Doe",
             "review": "Este suero ha transformado completamente mi piel. ¡Se siente tan hidratada y se ve radiante! Un imprescindible en mi rutina.",
-            "image": "/src/assets/images/hero01.png"
+            "image": "/images/hero01.png"
         },
         {
             "name": "Samantha Lee",
             "review": "La Crema de Noche Reparadora ha cambiado las reglas del juego. Me levanto con mi piel suave, nutrida y tersa. ¡Absolutamente me encanta!",
-            "image": "/src/assets/images/hero03.png"
+            "image": "/images/hero03.png"
         },
         {
             "name": "Alex Rodriguez",
             "review": "Tengo la piel sensible y el Gel de Aloe Calmante es un salvavidas. Calma mi enrojecimiento al instante y se siente increíblemente refrescante.",
-            "image": "/src/assets/images/hero07.png"
+            "image": "/images/hero07.png"
         }
     ],
 

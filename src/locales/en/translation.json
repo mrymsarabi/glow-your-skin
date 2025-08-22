@@ -44,17 +44,17 @@
         {
             "name": "Jane Doe",
             "review": "This serum has completely transformed my skin. It feels so hydrated and looks radiant! A must-have in my routine.",
-            "image": "/src/assets/images/hero01.png"
+            "image": "/images/hero01.png"
         },
         {
             "name": "Samantha Lee",
             "review": "The Night Repair Cream is a game-changer. I wake up with my skin feeling soft, nourished, and plump. Absolutely love it!",
-            "image": "/src/assets/images/hero03.png"
+            "image": "/images/hero03.png"
         },
         {
             "name": "Alex Rodriguez",
             "review": "I have sensitive skin and the Soothing Aloe Gel is a lifesaver. It calms my redness instantly and feels incredibly refreshing.",
-            "image": "/src/assets/images/hero07.png"
+            "image": "/images/hero07.png"
         }
     ],
 

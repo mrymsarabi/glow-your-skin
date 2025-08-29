@@ -71,15 +71,18 @@
     "blog_posts": [
         {
             "title": "5 Consigli per una Pelle Estiva Luminosa",
-            "excerpt": "Scopri come mantenere la pelle idratata e protetta durante i mesi estivi con questi semplici consigli."
+            "excerpt": "Scopri come mantenere la pelle idratata e protetta durante i mesi estivi con questi semplici consigli.",
+            "image": "/blogs/01.png"
         },
         {
             "title": "Il Potere del Siero alla Vitamina C",
-            "excerpt": "Scopri i fantastici benefici della Vitamina C e perché dovrebbe essere un elemento fondamentale nella tua routine di skincare."
+            "excerpt": "Scopri i fantastici benefici della Vitamina C e perché dovrebbe essere un elemento fondamentale nella tua routine di skincare.",
+            "image": "/blogs/02.png"
         },
         {
             "title": "Capire il Tuo Tipo di Pelle",
-            "excerpt": "Una guida per identificare il tuo tipo di pelle e scegliere i prodotti giusti per una carnagione più sana."
+            "excerpt": "Una guida per identificare il tuo tipo di pelle e scegliere i prodotti giusti per una carnagione più sana.",
+            "image": "/blogs/03.png"
         }
     ],
 

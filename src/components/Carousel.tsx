@@ -53,7 +53,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, defaultVisibleCount = 3 }) =
             {/* Prev Button */}
             <button
                 onClick={prevSlide}
-                className="btn btn-secondary rounded-circle shadow-sm opacity-75"
+                className="btn btn-outline-secondary rounded-circle shadow-sm opacity-75"
                 style={{
                     width: "40px",
                     height: "40px",
@@ -79,7 +79,7 @@ const Carousel: React.FC<CarouselProps> = ({ items, defaultVisibleCount = 3 }) =
             {/* Next Button */}
             <button
                 onClick={nextSlide}
-                className="btn btn-secondary rounded-circle shadow-sm opacity-75"
+                className="btn btn-outline-secondary rounded-circle shadow-sm opacity-75"
                 style={{
                     width: "40px",
                     height: "40px",

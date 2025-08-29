@@ -71,15 +71,18 @@
     "blog_posts": [
         {
             "title": "5 Tips for a Glowing Summer Skin",
-            "excerpt": "Learn how to keep your skin hydrated and protected during the summer months with these simple tips."
+            "excerpt": "Learn how to keep your skin hydrated and protected during the summer months with these simple tips.",
+            "image": "/blogs/01.png"
         },
         {
             "title": "The Power of Vitamin C Serum",
-            "excerpt": "Discover the amazing benefits of Vitamin C and why it should be a staple in your skincare routine."
+            "excerpt": "Discover the amazing benefits of Vitamin C and why it should be a staple in your skincare routine.",
+            "image": "/blogs/02.png"
         },
         {
             "title": "Understanding Your Skin Type",
-            "excerpt": "A guide to identifying your skin type and choosing the right products for a healthier complexion."
+            "excerpt": "A guide to identifying your skin type and choosing the right products for a healthier complexion.",
+            "image": "/blogs/03.png"
         }
     ],
 

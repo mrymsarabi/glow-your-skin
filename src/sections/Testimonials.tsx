@@ -30,7 +30,7 @@ const Testimonials = () => {
                 >
                     {t("testimonials_title")}
                 </motion.h2>
-                <div className="row justify-content-center g-4">
+                <div className="row justify-content-center g-4 shadow p-4 pt-0">
                     {testimonials.map((testimonial, index) => (
                         <motion.div
                             key={index}

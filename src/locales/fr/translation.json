@@ -71,15 +71,18 @@
     "blog_posts": [
         {
             "title": "5 Astuces Pour une Peau Éclatante en Été",
-            "excerpt": "Apprenez à garder votre peau hydratée et protégée pendant les mois d'été avec ces astuces simples."
+            "excerpt": "Apprenez à garder votre peau hydratée et protégée pendant les mois d'été avec ces astuces simples.",
+            "image": "/blogs/01.png"
         },
         {
             "title": "Le Pouvoir du Sérum à la Vitamine C",
-            "excerpt": "Découvrez les bienfaits incroyables de la Vitamine C et pourquoi elle devrait être un incontournable de votre routine de soins de la peau."
+            "excerpt": "Découvrez les bienfaits incroyables de la Vitamine C et pourquoi elle devrait être un incontournable de votre routine de soins de la peau.",
+            "image": "/blogs/02.png"
         },
         {
             "title": "Comprendre Votre Type de Peau",
-            "excerpt": "Un guide pour identifier votre type de peau et choisir les bons produits pour un teint plus sain."
+            "excerpt": "Un guide pour identifier votre type de peau et choisir les bons produits pour un teint plus sain.",
+            "image": "/blogs/03.png"
         }
     ],
 

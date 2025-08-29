@@ -23,7 +23,7 @@ const Products = () => {
     }));
 
     return (
-        <section id="products" className="py-5 bg-secondary" ref={ref}>
+        <section id="products" className="py-5 bg-light" ref={ref}>
             <div className="container py-5 px-3">
                 <motion.h2
                     className="text-center text-dark mb-5 fw-bold"

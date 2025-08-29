@@ -71,15 +71,18 @@
     "blog_posts": [
         {
             "title": "5 Consejos Para una Piel Resplandeciente en Verano",
-            "excerpt": "Aprende a mantener tu piel hidratada y protegida durante los meses de verano con estos sencillos consejos."
+            "excerpt": "Aprende a mantener tu piel hidratada y protegida durante los meses de verano con estos sencillos consejos.",
+            "image": "/blogs/01.png"
         },
         {
             "title": "El Poder del Sérum de Vitamina C",
-            "excerpt": "Descubre los increíbles beneficios de la Vitamina C y por qué debería ser un básico en tu rutina de cuidado de la piel."
+            "excerpt": "Descubre los increíbles beneficios de la Vitamina C y por qué debería ser un básico en tu rutina de cuidado de la piel.",
+            "image": "/blogs/02.png"
         },
         {
             "title": "Comprendiendo tu Tipo de Piel",
-            "excerpt": "Una guía para identificar tu tipo de piel y elegir los productos adecuados para una tez más saludable."
+            "excerpt": "Una guía para identificar tu tipo de piel y elegir los productos adecuados para una tez más saludable.",
+            "image": "/blogs/03.png"
         }
     ],
 
